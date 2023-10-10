@@ -26,7 +26,7 @@ TBA
 
 ## Check-in
 
-As for our first task (Github Exercise), let's put CHEKCED-IN in our corresponding names to ensure that everyone is familiar with Git. <br>
+As for our first task (Github Exercise), let's put CHEKCED-IN in our corresponding names to ensure that everyone is familiar with Git. Please start by making your own branch then push the code there and make a pull request to merge with this forked main. <br>
 Our `Learn Git & Python` task would be marked completed by finishing this.
 
 | Name     | Status     | Date       |
@@ -35,7 +35,7 @@ Our `Learn Git & Python` task would be marked completed by finishing this.
 | Drew     |            |            |
 | Michelle |            |            |
 
-### Step-by-step Guide
+### Step-by-step Guide (Outdated)
 
 - Open terminal, navigate to a approriate directory using `cd DirectoryName` and type `git clone https://github.com/shallowsmith/hydro_sense.git` to clone the repository.
 - Edit the ROADMAP.md file using any text editor or IDE.

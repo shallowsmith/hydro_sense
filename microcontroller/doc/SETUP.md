@@ -32,4 +32,13 @@ network={
 - Create a file named `ssh` with **no** extension and leave it blank. This will enable SSH on Raspberry Pi.
 - Move both `wpa_supplicant.conf` and `ssh` to MicroSD card 'boot'.
 
+- Boot the Raspberry Pi by plugging it into a power source. It should be connected to the local network upon booting.
+- Open terminal, type `arp -a` to see all devices on the local network, determine the local address of Raspberry Pi.
+- Type `ssh pi@[IP ADDRESS]` or `ssh pi@raspberrypi.local` in the termnial. When prompted, type in the default password for Raspberry Pi.
+- We will now be able to access Raspberry Pi remotely.
+
 ### 3. Python Installation
+
+- In the terminal, type `sudo apt-get update`, `sudo apt-get updgrade`, `sudo apt-get install python3-pip`, `sudo apt-get install mc`.
+- Type `python3` to check the version.
+- Type `sudo shutdown now` to shutdown the device.
