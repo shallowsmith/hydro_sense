@@ -29,11 +29,11 @@ TBA
 As for our first task (Github Exercise), let's put CHEKCED-IN in our corresponding names to ensure that everyone is familiar with Git. Please start by making your own branch then push the code there and make a pull request to merge with this forked main. <br>
 Our `Learn Git & Python` task would be marked completed by finishing this.
 
-| Name     | Status     | Date       |
-| -------- | ---------- | ---------- |
-| James    | CHECKED-IN | 2023-10-10 |
-| Drew     |            |            |
-| Michelle |            |            |
+| Name     | Status | Date       |
+| -------- | ------ | ---------- |
+| James    |        | 2023-10-10 |
+| Drew     |        | 2023-10-10 |
+| Michelle |        | 2023-10-10 |
 
 ### Step-by-step Guide (Outdated)
 
