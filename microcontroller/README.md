@@ -14,7 +14,7 @@ If you are new here: <br>
 
 ## Technologies
 
-Raspberry Pi 4 Model B, Raspberry Pi OS Lite, Python3, Git
+Raspberry Pi 4 Model B, Raspberry Pi OS Lite, Python3, Git.
 
 ## Libraries
 
