@@ -48,7 +48,7 @@ Our `Learn Git & Python` task would be marked completed by finishing this.
 - Type `git push -u origin <your-branch-name>` to push your change to your remote branch.
 - If prompted of user authentication (username and password), please check and read ["Creating a personal access token (classic)"](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic), ["Setting your Git username for every repository on your computer
   "](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git), ["Setting your commit email address in Git"](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git), to complete user authentication. You will need to type in your Personal Access Token for the password.
-  - On github, you will be able to create a pull request from your created branch to the main branch. Please select _the forked branch_ for the pull request.
+  - On github, you will be able to create a pull request from your created branch to the main branch. Please select _the forked main branch_ for the pull request. After that, DON'T PROCEED WITH MERGING, I will do it.
   - Upon request, I will merge the pull requests after checking.
     <br>
   - After everything is done, type `git checkout main` to switch your working branch to main.
