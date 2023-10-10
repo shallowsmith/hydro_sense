@@ -10,7 +10,7 @@ Our objective as the Microcontroller Team for the HydroSense project is to estab
 
 If you are new here: <br>
 
-- Please checkout the `doc/ROADMAP.md` to see our up-to-date roadmap.
+- Please checkout the `doc/ROADMAP.md` to see our up-to-date [roadmap](https://github.com/shallowsmith/hydro_sense/blob/main/microcontroller/doc/ROADMAP.md#microcontroller-team-roadmap).
 
 ## Technologies
 
