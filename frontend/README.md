@@ -8,13 +8,13 @@
 
 ## Roadmap
 
-| Goal :                                     | Date:            |
-| ------------------------------------------ | ---------------- |
-| create a ReactJS application               | Tuesday (10/10)  |
-| add user input text boxes and button / UI  | Friday (10/13)   |
-| add functionality to text boxes and button | Tuesday (10/17)  |
-| create collapsible taskbar                 | Friday (10/20)   |
-| link to socials                            | Saturday (10/21) |
+| Goal :                                     | Date:            | Status:     |
+| ------------------------------------------ | ---------------- | ----------- |
+| create a ReactJS application               | Tuesday (10/10)  | In Progress |
+| add user input text boxes and button / UI  | Friday (10/13)   |             |
+| add functionality to text boxes and button | Tuesday (10/17)  |             |
+| create collapsible taskbar                 | Friday (10/20)   |             |
+| link to socials                            | Saturday (10/21) |             |
 
 ## Libraries
 
