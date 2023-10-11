@@ -27,6 +27,19 @@ This document overviews the roadmap of the backend team for HydroSense referring
 
 TBA
 
+## Git Workflow Summary
+
+1. Create or move into your own branch (to create: `git checkout -b <branch-name>`> | to move: `git checkout <branch-name>`)
+2. Fetch the latest changes from remote repository (`git fetch origin`). This updates your local copy of the main branch.
+3. Merge main branch into your own branch (`git merge origin/main`). This combines the changes from the main branch with the changes on your own branch.
+4. Make the changes you want to the code.
+5. Stage (use `git add .` to add entire directory or `git add <file directory>` to add specific files only)
+6. Commit (`git commit -m "commit message"`)
+7. Push (`git push -u origin <branch-name>`)
+8. Create a pull request for team members to review
+9. Address any review comments made by team members
+10. MERGE!
+
 ## Check-in
 
 As for our first task (Github Exercise), let's put CHEKCED-IN in our corresponding names to ensure that everyone is familiar with Git. Please start by making your own branch then push the code there and make a pull request to merge with this forked main. <br>
