@@ -35,7 +35,7 @@ This document overviews the roadmap of the backend team for HydroSense referring
 | Check-In ReactJS App and Figma Design to Github | Alan          | 2023-10-11 | In Progress |
 | Implement Home page                             | Krishiv       | 2023-10-23 |             |
 | Implement Taskbar                               | David         | 2023-10-23 |             |
-| Implement Sign-in and Login page                | TBD           | Alan       | 2023-10-23  |
+| Implement Sign-in and Login page                | Alan          | 2023-10-23 |             |
 | Implement About page                            | Krishiv       | 2023-10-29 |             |
 | Implement Existing sheets page                  | David         | 2023-10-29 |             |
 | Implement Profile page                          | Alan          | 2023-10-29 |             |
