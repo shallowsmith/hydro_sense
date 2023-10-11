@@ -29,16 +29,18 @@ TBA
 
 ## Git Workflow Summary
 
-1. Create or move into your own branch (to create: `git checkout -b <branch-name>`> | to move: `git checkout <branch-name>`)
-2. Fetch the latest changes from remote repository (`git fetch origin`). This updates your local copy of the main branch.
-3. Merge main branch into your own branch (`git merge origin/main`). This combines the changes from the main branch with the changes on your own branch.
-4. Make the changes you want to the code.
-5. Stage (use `git add .` to add entire directory or `git add <file directory>` to add specific files only)
-6. Commit (`git commit -m "commit message"`)
-7. Push (`git push -u origin <branch-name>`)
-8. Create a pull request for team members to review
-9. Address any review comments made by team members
-10. MERGE!
+1. Start on the main branch (use `git branch` to check). 
+2. Fetch the latest changes from remote repository (`git fetch origin`). This fetches all updates from remote repository onto your local repository.
+3. Pull all updates from remote repository into your local repository (`git pull`). This updates your main branch on your local repository.
+4. Create or move into your own branch (to create: `git checkout -b <branch-name>`> | to move: `git checkout <branch-name>`)
+5. Merge main branch into your own branch (`git merge origin/main`). This combines the changes from the main branch with the changes on your own branch.
+6. Make the changes you want to the code.
+7. Stage (use `git add .` to add entire directory or `git add <file directory>` to add specific files only)
+8. Commit (`git commit -m "commit message"`)
+9. Push (`git push -u origin <branch-name>`)
+10. Create a pull request for team members to review
+11. Address any review comments made by team members
+12. MERGE!
 
 ## Check-in
 
