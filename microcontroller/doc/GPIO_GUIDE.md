@@ -1,4 +1,8 @@
-The `RPi.GPIO` library is the standard library for Raspberry Pi GPIO access in Python. Here's a basic guide on how to use its syntax:
+The `RPi.GPIO` library is the standard library for Raspberry Pi GPIO access in Python.
+
+Note: `RPi.GPIO` is a Raspberry Pi exclusive library. So we will implement a cross-development environment where we **develop on computer, transfer to pi, test on pi, and run on pi**.
+
+Here's a basic guide on how to use its syntax:
 
 ### 1. Importing the Library
 
