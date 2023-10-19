@@ -37,12 +37,12 @@ network={
 - Boot the Raspberry Pi by plugging it into a power source.
   - **WARNING: Depending on the model and SD card, your Raspberry Pi may require up to 5 minutes to boot and connect to your wireless network the first time it boots.**
 - Open terminal, type `arp -a` to see all devices on the local network, determine the local address of Raspberry Pi.
-- Type `ssh pi@[IP ADDRESS]` in the termnial. When prompted, type in the SSH credential we have set for Raspberry Pi.
+- Type `ssh hydrosense@[IP ADDRESS]` in the termnial. When prompted, type in the SSH credential we have set for Raspberry Pi.
 - We will now be able to access Raspberry Pi remotely. <br>
 - For a detailed guide, please checkoout the [Official Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network)
 
 ### 3. Python Installation
 
-- In the terminal, type `sudo apt-get update`, `sudo apt-get updgrade`, `sudo apt-get install python3-pip`, `sudo apt-get install mc`.
+- In the terminal, type `sudo apt-get update`, `sudo apt-get updgrade`, `sudo apt-get install python3-pip`, `sudo apt-get install mc`, `sudo pip 3 install Pyrebase`
 - Type `python3` to check the version.
 - Type `sudo shutdown now` to shutdown the device.
