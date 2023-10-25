@@ -1,12 +1,9 @@
-import RPi.GPIO as GPIO
+import board
+import busio
+import adafruit_sht31d
 
-# Set up GPIO mode and pins
-GPIO.setmode(GPIO.BCM)
-SENSOR_PIN = 3  # Input PIN unknown for now
-GPIO.setup(SENSOR_PIN, GPIO.IN)
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = adafruit_sht31d.SHT31D(i2c)
 
-value = GPIO.input(SENSOR_PIN)
-
-print(GPIO.input(value))
-
-GPIO.cleanup()
+print("Temperature:", sensor.temperature)
+print("Humidity:", sensor.relative_humidity)

@@ -46,3 +46,15 @@ network={
 - In the terminal, type `sudo apt-get update`, `sudo apt-get updgrade`, `sudo apt-get install python3-pip`, `sudo apt-get install mc`, `sudo pip 3 install Pyrebase`
 - Type `python3` to check the version.
 - Type `sudo shutdown now` to shutdown the device.
+
+### 4. Virtual Enviornment (or force install)
+
+- To force install a library `pip3 install xyz --break-system-packages`
+- If you are installing on the Bookworm version of Raspberry Pi OS, you will need to install your python modules in a virtual environment. To Install and activate the virtual environment, use the following commands: `sudo apt install python3.11-venv
+python -m venv env --system-site-packages`
+- To activate the virtual environment: `source env/bin/activate`
+- To deactivate the virutal environment: `source env/bin/activate`
+
+### 5. MISC.
+
+- `sudo i2cdetect -y 1` to check i2c address for the sensor.
