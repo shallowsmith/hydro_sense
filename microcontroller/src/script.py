@@ -21,7 +21,7 @@ while True:
     print("Temperature:", temperature, " Celsius")
     print("Humidity:", humidity, "%")
 
-        # Send data to Firebase
+    # Send data to Firebase
     ref = db.reference('sensor_data')
     ref.push({
         'temperature': temperature,
@@ -30,7 +30,7 @@ while True:
     })
 
 
-    time.sleep(5)
+    time.sleep(30)
 
 
 # Celsius to Fahrenheit function (Not used yet)
