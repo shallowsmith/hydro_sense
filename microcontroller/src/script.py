@@ -6,9 +6,9 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-cred = credentials.Certificate('key.json') 
+cred = credentials.Certificate('key.json')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://hydro-sense-default-rtdb.firebaseio.com/' 
+    'databaseURL': 'https://hydro-sense-default-rtdb.firebaseio.com/'
 })
 
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -21,7 +21,7 @@ while True:
     print("Temperature:", temperature, " Celsius")
     print("Humidity:", humidity, "%")
 
-    # Send data to Firebase
+    # Send data to Firebase in JSON format
     ref = db.reference('sensor_data')
     ref.push({
         'temperature': temperature,
@@ -29,10 +29,4 @@ while True:
         'time': time.time()
     })
 
-
     time.sleep(30)
-
-
-# Celsius to Fahrenheit function (Not used yet)
-def celsius_to_fahrenheit(celsius):
-    return celsius * 9/5 + 32
