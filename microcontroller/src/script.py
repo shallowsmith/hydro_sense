@@ -19,6 +19,11 @@ while True:
     humidity = round(sensor.relative_humidity, 2)
 
     print("Temperature:", temperature, " Celsius")
+    
+    #temperature conversion from celsius to fahrenheit
+    fahrenheit_temperature = (temperature * 9/5) + 32
+    print(f"{fahrenheit_temperature} Degrees Fahrenheit")
+    
     print("Humidity:", humidity, "%")
 
     # Send data to Firebase in JSON format
