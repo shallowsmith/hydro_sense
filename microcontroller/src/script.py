@@ -22,17 +22,18 @@ while True:
     # Temperature conversion from celsius to fahrenheit
     fahrenheit_temperature = round((temperature * 9/5) + 32, 2)
 
-    # Display time in format "2023-10-27 10:51:53"
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    # Display time in format
+    node_name = time.strftime("%Y-%m-%d", time.localtime())
+    current_time = time.strftime("%H:%M:%S", time.localtime())
 
-    print(f"{current_time}")
+    print(f"{node_name} {current_time}")
     print(f"Temperature: {fahrenheit_temperature}\u00B0F")
     print(f"Humidity: {humidity}%\n")
 
     # Send data to Firebase in JSON format
-    ref = db.reference('sensor_data')
+    ref = db.reference(f'test_data/{node_name}')
     ref.push({
-        'temperature': temperature,
+        'temperature': fahrenheit_temperature,
         'humidity': humidity,
         'time': current_time
     })
