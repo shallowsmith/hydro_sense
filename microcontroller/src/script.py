@@ -29,4 +29,8 @@ while True:
         'time': time.time()
     })
 
+    #Display time in format "2023-10-27 10:51:53"
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f"{current_time}")
+    
     time.sleep(30)
