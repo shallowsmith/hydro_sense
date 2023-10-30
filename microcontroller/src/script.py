@@ -15,27 +15,26 @@ i2c = busio.I2C(board.SCL, board.SDA)
 sensor = adafruit_sht31d.SHT31D(i2c)
 
 while True:
-    temperature = round(sensor.temperature, 2)
+    # Data variable initialization
+    temperature = sensor.temperature
     humidity = round(sensor.relative_humidity, 2)
 
-    print("Temperature:", temperature, " Celsius")
-    
-    #temperature conversion from celsius to fahrenheit
-    fahrenheit_temperature = (temperature * 9/5) + 32
-    print(f"{fahrenheit_temperature} Degrees Fahrenheit")
-    
-    print("Humidity:", humidity, "%")
+    # Temperature conversion from celsius to fahrenheit
+    fahrenheit_temperature = round((temperature * 9/5) + 32, 2)
+
+    # Display time in format "2023-10-27 10:51:53"
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+    print(f"{current_time}")
+    print(f"Temperature: {fahrenheit_temperature}\u00B0F")
+    print(f"Humidity: {humidity}%\n")
 
     # Send data to Firebase in JSON format
     ref = db.reference('sensor_data')
     ref.push({
         'temperature': temperature,
         'humidity': humidity,
-        'time': time.time()
+        'time': current_time
     })
 
-    #Display time in format "2023-10-27 10:51:53"
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    print(f"{current_time}")
-    
     time.sleep(30)
