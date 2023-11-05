@@ -54,4 +54,5 @@ while True:
         'time': current_time
     })
 
-    time.sleep(60)
+    # Update data every 30 minutes
+    time.sleep(1800)
